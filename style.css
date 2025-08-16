@@ -48,8 +48,8 @@ header ul {
   font-size: clamp(1.1rem, 2vw, 1.6rem);
 }
 header ul li a {
-  text-decoration: none; /* Remove default underline */
-  color: inherit; /* Inherit color from the parent li */
+  text-decoration: none; 
+  color: inherit; 
 }
 header ul li {
   padding: 0 2.3rem 0.25rem;
@@ -101,14 +101,13 @@ header ul:hover li:hover ~ li:before {
   float: right;
   padding: 0 7%;
   width: auto;
-  position: relative; /* أضف هذا السطر */
+  position: relative; 
 }
 
 .nav-mobile .mob-nav {
-  position: absolute; /* أضف هذا السطر */
-  top: 100%; /* سيضع القائمة أسفل زر الهامبرغر */
-  right: 0; /* يمكنك تعديل هذه القيمة */
-  /* باقي الـ CSS الخاص بالقائمة */
+  position: absolute; 
+  top: 100%; 
+  right: 0;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.5s ease-out, padding 0.5s ease-out;
@@ -324,7 +323,6 @@ h2 {
 .bouquet .bouquet-div::before {
   display: flex;
   align-items: center;
-  /* background-color: rgba(214, 102, 102, 0.267); */
   height: 100%;
   width: 100%;
   opacity: 0;
@@ -372,7 +370,6 @@ h2 {
   opacity: 1;
 }
 .bouquet .bouquet-div:hover::before {
-  /* background-color: #f7f7f777; */
   opacity: 1;
   z-index: 2;
 }
@@ -436,7 +433,6 @@ h2 {
   width: 100%;
   height: 40%;
   flex-grow: 1;
-  /* max-height: 30vh; */
   gap: 1%;
   margin: 1% 0;
 }
@@ -660,12 +656,12 @@ h2 {
     35px,
     6vw,
     60px
-  ); /* الحد الأدنى 35 بكسل، الأفضل 6% من عرض الشاشة، الأقصى 60 بكسل */
+  ); 
   height: clamp(
     35px,
     6vw,
     60px
-  ); /* الحد الأدنى 35 بكسل، الأفضل 6% من عرض الشاشة، الأقصى 60 بكسل */
+  );
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -768,7 +764,7 @@ h2 {
 }
 .faq .faq-q h3 {
   font-size: clamp(1rem, 2vw, 1.7rem);
-  margin: 0; /* إزالة المارجن الافتراضي لـ h3 */
+  margin: 0; 
   color: #310424;
 }
 
@@ -854,43 +850,10 @@ h2 {
     opacity: 0;
   }
 }
-/* @keyframes pot-1 {
-  0% {
-    opacity: 1;
-  }
-  25% {
-    opacity: 1;
-  }
-  49% {
-    opacity: 0;
-  }
-  75% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes pot-2 {
-  0% {
-    opacity: 0;
-  }
-  25% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 1;
-  }
-  75% {
-    opacity: 1;
-  }
-  99% {
-    opacity: 0;
-  }
-} */
+
 footer {
-  background-color: #ceffe2a8; /* Dark background matching your palette */
-  color: #03250d; /* Light text color */
+  background-color: #ceffe2a8; 
+  color: #03250d; 
   padding: 4% 7%;
   font-size: clamp(0.8rem, 2vw, 1.3rem);
   line-height: 1.6;
@@ -898,22 +861,22 @@ footer {
 
 .footer-content {
   display: flex;
-  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  flex-wrap: wrap; 
   justify-content: space-between;
-  gap: 30px; /* Space between footer columns */
+  gap: 30px;
 }
 
 .footer-logo {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  flex-basis: 25%; /* Adjust basis as needed */
-  min-width: 220px; /* Minimum width for logo section */
+  flex-basis: 25%; 
+  min-width: 220px;
 }
 
 .footer-logo img {
   width: 90%;
-  max-width: 220px; /* Adjust logo size */
+  max-width: 220px; 
   margin-bottom: 15px;
 }
 
@@ -924,15 +887,15 @@ footer {
 
 .footer-links,
 .footer-contact {
-  flex-basis: 25%; /* Adjust basis as needed */
-  min-width: 180px; /* Minimum width for link/contact sections */
+  flex-basis: 25%; 
+  min-width: 180px; 
 }
 
 .footer-links h3,
 .footer-contact h3 {
   font-family: "Agbalumo", cursive;
   font-size: clamp(1rem, 2vw, 1.6rem);
-  color: #000000; /* A lighter shade for headings */
+  color: #000000; 
   margin-bottom: 20px;
 }
 
@@ -953,7 +916,7 @@ footer {
 }
 
 .footer-links ul li a:hover {
-  color: #34b63f; /* Hover color matching your brand */
+  color: #34b63f;
 }
 
 .footer-contact p {
@@ -1068,7 +1031,7 @@ footer .social-icon {
   }
   .swiper-navBtn::before,
   .swiper-navBtn::after {
-    font-size: 30px !important; /* جرب قيمة أقل مثل 20px أو 18px */
+    font-size: 30px !important; 
   }
   .swiper-button-next {
     margin-right: 1%;
@@ -1259,3 +1222,4 @@ footer .social-icon {
     }
   }
 }
+
