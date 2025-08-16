@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", function () {
   navMenu.forEach((item) => {
     const menu = item.querySelector(".hamburger-menu");
     const mobNav = item.querySelector(".mob-nav");
-    // تحديد جميع الروابط داخل القائمة
     const navLinks = mobNav.querySelectorAll("a");
 
     menu.addEventListener("click", () => {
@@ -17,12 +16,9 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
 
-    // إضافة مستمع حدث لكل رابط
     navLinks.forEach((link) => {
       link.addEventListener("click", () => {
-        // إزالة الكلاس "active" لإخفاء القائمة
         item.classList.remove("active");
-        // إعادة تعيين الارتفاع إلى 0 لإخفاء القائمة بسلاسة
         mobNav.style.maxHeight = "0";
       });
     });
@@ -52,8 +48,8 @@ document.addEventListener("DOMContentLoaded", function () {
     // fade: "true",
     grabCursor: true,
     autoplay: {
-      delay: 3000, // مدة بقاء الشريحة (3 ثواني) قبل الانتقال للشريحة التالية
-      disableOnInteraction: false, // لا توقف التحريك التلقائي عند تفاعل المستخدم مع السلايدر (مثل السحب)
+      delay: 3000, 
+      disableOnInteraction: false, 
     },
     pagination: {
       el: ".swiper-pagination",
@@ -82,3 +78,4 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   });
 });
+
