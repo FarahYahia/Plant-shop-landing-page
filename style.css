@@ -555,8 +555,6 @@ h2 {
   padding: 3% 7%;
   box-sizing: border-box;
   overflow: hidden;
-      scroll-margin-top: 100px;
-
 }
 
 .img-wrapper {
@@ -1153,22 +1151,27 @@ footer .social-icon {
     animation-timeline: view();
     animation-range: 20px 36%;
   }
+  .about,
+  .contact,
+  .review {
+    opacity: 0;
+    animation: fade-in 0.3s linear forwards;
+    scale: 0.7;
+    animation-timeline: view();
+    animation-range: 20px 30%;
+  }
   h2,
   .banners .main-banner,
-  .banners .banner-row a,
-  .about,
-  .contact {
+  .banners .banner-row a {
     opacity: 0;
     animation: fade-in 1s linear forwards;
-    animation-delay: 0.4s;
     animation-timeline: view();
     animation-range: 30px 20%;
   }
 
   .main .headline,
   .main .headline p,
-  .main .wrapper,
-  .review h2 {
+  .main .wrapper {
     opacity: 0;
     animation-delay: 0.5s;
     animation: fade-in 1s linear forwards;
@@ -1217,4 +1220,3 @@ footer .social-icon {
     }
   }
 }
-
